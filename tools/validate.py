@@ -312,10 +312,9 @@ for dirpath, _, files in os.walk(ROOT):
             hits.append(os.path.relpath(p, ROOT))
 rec("FAIL" if hits else "PASS", P, "no secret-like tokens in tree" + (f" — {hits}" if hits else ""))
 
-# no links to OTHER GitHub resources (self-references to this repo are allowed)
-SELF_SLUG = "isoc-il-labs/agent-reliability-eval-data"
+# no GitHub URLs at all (not even self-references)
 gh_re = re.compile(r"https?://(?:www\.)?github\.com/([^\s)\"'>,]+)")
-gh_other = []
+gh_links = []
 for dirpath, _, files in os.walk(ROOT):
     if "/.git" in dirpath:
         continue
@@ -328,12 +327,10 @@ for dirpath, _, files in os.walk(ROOT):
         except Exception:
             continue
         for m in gh_re.finditer(txt):
-            slug = m.group(1).rstrip("/")
-            if not slug.startswith(SELF_SLUG):
-                gh_other.append(f"{rel} -> github.com/{slug}")
-rec("FAIL" if gh_other else "PASS", P,
-    "no links to other GitHub resources (self-refs allowed)"
-    + (f" — {gh_other}" if gh_other else ""))
+            gh_links.append(f"{rel} -> github.com/{m.group(1).rstrip('/')}")
+rec("FAIL" if gh_links else "PASS", P,
+    "no GitHub URLs anywhere in the repo"
+    + (f" — {gh_links}" if gh_links else ""))
 
 # fixtures publish on example.com (sample domains)
 non_example = []
@@ -377,7 +374,7 @@ for fn in ["README.md", "LICENSE", "CITATION.cff", ".gitignore",
     rec("PASS" if ok else "FAIL", P, f"present: {fn}" if ok else f"MISSING: {fn}")
 # CITATION.cff parses as yaml-ish (basic key check)
 cff = open(os.path.join(ROOT, "CITATION.cff"), encoding="utf-8").read()
-cff_ok = all(k in cff for k in ["cff-version:", "title:", "license: CC-BY-4.0", "repository-code:"])
+cff_ok = all(k in cff for k in ["cff-version:", "title:", "license: CC-BY-4.0", "authors:"])
 rec("PASS" if cff_ok else "FAIL", P, "CITATION.cff has required CFF keys + CC-BY-4.0 license")
 # license mentions CC BY 4.0
 lic = open(os.path.join(ROOT, "LICENSE"), encoding="utf-8").read()

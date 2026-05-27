@@ -4,7 +4,6 @@ message: "If you use this dataset, please cite it."
 type: dataset
 authors:
   - name: "ISOC-IL Labs"
-repository-code: "https://github.com/isoc-il-labs/agent-reliability-eval-data"
 abstract: >-
   The dataset behind agent-reliability-eval: 44 QA'd synthetic news-article test
   units (and a 68-track raw transparency set) with committed ground-truth labels
