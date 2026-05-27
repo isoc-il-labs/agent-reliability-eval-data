@@ -80,7 +80,7 @@ Each is saved as `dataset/html/<id>-r.html` with a `dataset/articles-m3-reviewed
 
 ## Addendum — satire rubric gap closed (2026-05-25)
 
-The "rubric gap on satire" flagged throughout this report (satire forced onto the credibility axis, inflating label-disagreement) has since been **closed**. Reviewing the reference agent's current build ([dandan64/ProjectLegit](https://github.com/dandan64/ProjectLegit) @ 2026-05-25) showed the agent now emits dedicated `SATIRE` and `ENTERTAINMENT_GOSSIP` ratings (with a satire short-circuit in both the source-verify and consensus-verify prompts), plus `UNVERIFIABLE` on the author axis. The eval was lagging that change. The iteration:
+The "rubric gap on satire" flagged throughout this report (satire forced onto the credibility axis, inflating label-disagreement) has since been **closed**. Reviewing the reference agent's current build (as of 2026-05-25) showed the agent now emits dedicated `SATIRE` and `ENTERTAINMENT_GOSSIP` ratings (with a satire short-circuit in both the source-verify and consensus-verify prompts), plus `UNVERIFIABLE` on the author axis. The eval was lagging that change. The iteration:
 
 - added `SATIRE` + `ENTERTAINMENT_GOSSIP` to `source-format`/`consensus-format` and `UNVERIFIABLE` to `author` in `rubric.js`, with scores in `scoring.js` (`SATIRE`=25, `ENTERTAINMENT_GOSSIP`=40) and ordinal axes in `report.js`;
 - relabeled the 6 satire units (and their raw-track variants) to `consensus-format=SATIRE` while keeping `source-format=NEUTRAL` — satire is a content property, and the example.com fixtures have no identifiable satire *publisher*. The baseline run validated this: the agent returned `consensus-format=SATIRE` 9/12 but `source-format=NEUTRAL` 11/12;

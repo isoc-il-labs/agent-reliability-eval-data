@@ -312,6 +312,29 @@ for dirpath, _, files in os.walk(ROOT):
             hits.append(os.path.relpath(p, ROOT))
 rec("FAIL" if hits else "PASS", P, "no secret-like tokens in tree" + (f" — {hits}" if hits else ""))
 
+# no links to OTHER GitHub resources (self-references to this repo are allowed)
+SELF_SLUG = "isoc-il-labs/agent-reliability-eval-data"
+gh_re = re.compile(r"https?://(?:www\.)?github\.com/([^\s)\"'>,]+)")
+gh_other = []
+for dirpath, _, files in os.walk(ROOT):
+    if "/.git" in dirpath:
+        continue
+    for f in files:
+        if not f.endswith((".md", ".cff", ".py", ".json", ".txt", ".csv", ".jsonl", ".html")) and f != "LICENSE":
+            continue
+        rel = os.path.relpath(os.path.join(dirpath, f), ROOT)
+        try:
+            txt = open(os.path.join(dirpath, f), encoding="utf-8", errors="ignore").read()
+        except Exception:
+            continue
+        for m in gh_re.finditer(txt):
+            slug = m.group(1).rstrip("/")
+            if not slug.startswith(SELF_SLUG):
+                gh_other.append(f"{rel} -> github.com/{slug}")
+rec("FAIL" if gh_other else "PASS", P,
+    "no links to other GitHub resources (self-refs allowed)"
+    + (f" — {gh_other}" if gh_other else ""))
+
 # fixtures publish on example.com (sample domains)
 non_example = []
 for f in sorted(on_disk):
