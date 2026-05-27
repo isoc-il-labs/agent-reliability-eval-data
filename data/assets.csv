@@ -1,0 +1,69 @@
+id,asset,language,lang_code,generator_model,generator_detail,bucket,track,review_status,in_canonical_44,original_id,html_path
+gen-opinion-en-01,gen-opinion-en-01.html,English,en,gpt-5.4,OpenAI GPT-5.4 (chat-completions batch),credible-but-opinionated,chat,pass,yes,,data/fixtures/gen-opinion-en-01.html
+gen-opinion-en-01-pro,gen-opinion-en-01-pro.html,English,en,gpt-5.4-pro,OpenAI GPT-5.4-pro (responses batch),credible-but-opinionated,pro,pass,yes,,data/fixtures/gen-opinion-en-01-pro.html
+gen-opinion-en-02,gen-opinion-en-02.html,English,en,gpt-5.4,OpenAI GPT-5.4 (chat-completions batch),credible-but-opinionated,chat,superseded,no,,data/fixtures/gen-opinion-en-02.html
+gen-opinion-en-02-pro,gen-opinion-en-02-pro.html,English,en,gpt-5.4-pro,OpenAI GPT-5.4-pro (responses batch),credible-but-opinionated,pro,superseded,no,,data/fixtures/gen-opinion-en-02-pro.html
+gen-opinion-en-02-pro-r,gen-opinion-en-02-pro-r.html,English,en,gpt-5.4-pro,OpenAI GPT-5.4-pro (responses batch),credible-but-opinionated,pro,rewritten,yes,gen-opinion-en-02-pro,data/fixtures/gen-opinion-en-02-pro-r.html
+gen-opinion-en-02-r,gen-opinion-en-02-r.html,English,en,gpt-5.4,OpenAI GPT-5.4 (chat-completions batch),credible-but-opinionated,chat,rewritten,yes,gen-opinion-en-02,data/fixtures/gen-opinion-en-02-r.html
+conspiracy-en,conspiracy-en.html,English,en,handwritten,Hand-authored by the maintainers (no model),fact-checked-false,handwritten,handwritten,no,,data/fixtures/conspiracy-en.html
+gen-gold-en-01-pro,gen-gold-en-01-pro.html,English,en,gpt-5.4-pro,OpenAI GPT-5.4-pro (responses batch),gold-credible,pro,pass,yes,,data/fixtures/gen-gold-en-01-pro.html
+gen-gold-en-02,gen-gold-en-02.html,English,en,gpt-5.4,OpenAI GPT-5.4 (chat-completions batch),gold-credible,chat,pass,yes,,data/fixtures/gen-gold-en-02.html
+gen-gold-en-02-pro,gen-gold-en-02-pro.html,English,en,gpt-5.4-pro,OpenAI GPT-5.4-pro (responses batch),gold-credible,pro,pass,yes,,data/fixtures/gen-gold-en-02-pro.html
+gold-en,gold-en.html,English,en,handwritten,Hand-authored by the maintainers (no model),gold-credible,handwritten,handwritten,no,,data/fixtures/gold-en.html
+synthetic-en-001,synthetic-en-001.html,English,en,handwritten,Hand-authored by the maintainers (no model),gold-credible,handwritten,handwritten,no,,data/fixtures/synthetic-en-001.html
+gen-unreliable-en-01-pro,gen-unreliable-en-01-pro.html,English,en,gpt-5.4-pro,OpenAI GPT-5.4-pro (responses batch),low-credibility,pro,pass,yes,,data/fixtures/gen-unreliable-en-01-pro.html
+gen-unreliable-en-02,gen-unreliable-en-02.html,English,en,gpt-5.4,OpenAI GPT-5.4 (chat-completions batch),low-credibility,chat,superseded,no,,data/fixtures/gen-unreliable-en-02.html
+gen-unreliable-en-02-pro,gen-unreliable-en-02-pro.html,English,en,gpt-5.4-pro,OpenAI GPT-5.4-pro (responses batch),low-credibility,pro,superseded,no,,data/fixtures/gen-unreliable-en-02-pro.html
+gen-unreliable-en-02-pro-r,gen-unreliable-en-02-pro-r.html,English,en,gpt-5.4-pro,OpenAI GPT-5.4-pro (responses batch),low-credibility,pro,rewritten,yes,gen-unreliable-en-02-pro,data/fixtures/gen-unreliable-en-02-pro-r.html
+gen-unreliable-en-02-r,gen-unreliable-en-02-r.html,English,en,gpt-5.4,OpenAI GPT-5.4 (chat-completions batch),low-credibility,chat,rewritten,yes,gen-unreliable-en-02,data/fixtures/gen-unreliable-en-02-r.html
+gen-unreliable-en-03,gen-unreliable-en-03.html,English,en,gpt-5.4,OpenAI GPT-5.4 (chat-completions batch),low-credibility,chat,superseded,no,,data/fixtures/gen-unreliable-en-03.html
+gen-unreliable-en-03-pro,gen-unreliable-en-03-pro.html,English,en,gpt-5.4-pro,OpenAI GPT-5.4-pro (responses batch),low-credibility,pro,superseded,no,,data/fixtures/gen-unreliable-en-03-pro.html
+gen-unreliable-en-03-pro-r,gen-unreliable-en-03-pro-r.html,English,en,gpt-5.4-pro,OpenAI GPT-5.4-pro (responses batch),low-credibility,pro,rewritten,yes,gen-unreliable-en-03-pro,data/fixtures/gen-unreliable-en-03-pro-r.html
+gen-unreliable-en-03-r,gen-unreliable-en-03-r.html,English,en,gpt-5.4,OpenAI GPT-5.4 (chat-completions batch),low-credibility,chat,rewritten,yes,gen-unreliable-en-03,data/fixtures/gen-unreliable-en-03-r.html
+gen-n12like-en-01,gen-n12like-en-01.html,English,en,gpt-5.4,OpenAI GPT-5.4 (chat-completions batch),mainstream-israeli-news,chat,pass,yes,,data/fixtures/gen-n12like-en-01.html
+gen-n12like-en-01-pro,gen-n12like-en-01-pro.html,English,en,gpt-5.4-pro,OpenAI GPT-5.4-pro (responses batch),mainstream-israeli-news,pro,pass,yes,,data/fixtures/gen-n12like-en-01-pro.html
+gen-n12like-en-02,gen-n12like-en-02.html,English,en,gpt-5.4,OpenAI GPT-5.4 (chat-completions batch),mainstream-israeli-news,chat,pass,yes,,data/fixtures/gen-n12like-en-02.html
+gen-n12like-en-02-pro,gen-n12like-en-02-pro.html,English,en,gpt-5.4-pro,OpenAI GPT-5.4-pro (responses batch),mainstream-israeli-news,pro,pass,yes,,data/fixtures/gen-n12like-en-02-pro.html
+gen-satire-en-01-pro,gen-satire-en-01-pro.html,English,en,gpt-5.4-pro,OpenAI GPT-5.4-pro (responses batch),satire,pro,superseded,no,,data/fixtures/gen-satire-en-01-pro.html
+gen-satire-en-01-pro-r,gen-satire-en-01-pro-r.html,English,en,gpt-5.4-pro,OpenAI GPT-5.4-pro (responses batch),satire,pro,rewritten,yes,gen-satire-en-01-pro,data/fixtures/gen-satire-en-01-pro-r.html
+gen-satire-en-02,gen-satire-en-02.html,English,en,gpt-5.4,OpenAI GPT-5.4 (chat-completions batch),satire,chat,superseded,no,,data/fixtures/gen-satire-en-02.html
+gen-satire-en-02-pro,gen-satire-en-02-pro.html,English,en,gpt-5.4-pro,OpenAI GPT-5.4-pro (responses batch),satire,pro,superseded,no,,data/fixtures/gen-satire-en-02-pro.html
+gen-satire-en-02-pro-r,gen-satire-en-02-pro-r.html,English,en,gpt-5.4-pro,OpenAI GPT-5.4-pro (responses batch),satire,pro,rewritten,yes,gen-satire-en-02-pro,data/fixtures/gen-satire-en-02-pro-r.html
+gen-satire-en-02-r,gen-satire-en-02-r.html,English,en,gpt-5.4,OpenAI GPT-5.4 (chat-completions batch),satire,chat,rewritten,yes,gen-satire-en-02,data/fixtures/gen-satire-en-02-r.html
+satire-en,satire-en.html,English,en,handwritten,Hand-authored by the maintainers (no model),satire,handwritten,handwritten,no,,data/fixtures/satire-en.html
+clickbait-en,clickbait-en.html,English,en,handwritten,Hand-authored by the maintainers (no model),tabloid-clickbait,handwritten,handwritten,no,,data/fixtures/clickbait-en.html
+gen-tabloid-en-01,gen-tabloid-en-01.html,English,en,gpt-5.4,OpenAI GPT-5.4 (chat-completions batch),tabloid-clickbait,chat,pass,yes,,data/fixtures/gen-tabloid-en-01.html
+gen-tabloid-en-01-pro,gen-tabloid-en-01-pro.html,English,en,gpt-5.4-pro,OpenAI GPT-5.4-pro (responses batch),tabloid-clickbait,pro,pass,yes,,data/fixtures/gen-tabloid-en-01-pro.html
+gen-tabloid-en-02,gen-tabloid-en-02.html,English,en,gpt-5.4,OpenAI GPT-5.4 (chat-completions batch),tabloid-clickbait,chat,pass,yes,,data/fixtures/gen-tabloid-en-02.html
+gen-tabloid-en-02-pro,gen-tabloid-en-02-pro.html,English,en,gpt-5.4-pro,OpenAI GPT-5.4-pro (responses batch),tabloid-clickbait,pro,pass,yes,,data/fixtures/gen-tabloid-en-02-pro.html
+gen-opinion-he-01-pro,gen-opinion-he-01-pro.html,Hebrew,he,gpt-5.4-pro,OpenAI GPT-5.4-pro (responses batch),credible-but-opinionated,pro,pass,yes,,data/fixtures/gen-opinion-he-01-pro.html
+gen-opinion-he-02,gen-opinion-he-02.html,Hebrew,he,gpt-5.4,OpenAI GPT-5.4 (chat-completions batch),credible-but-opinionated,chat,pass,yes,,data/fixtures/gen-opinion-he-02.html
+gen-opinion-he-02-pro,gen-opinion-he-02-pro.html,Hebrew,he,gpt-5.4-pro,OpenAI GPT-5.4-pro (responses batch),credible-but-opinionated,pro,pass,yes,,data/fixtures/gen-opinion-he-02-pro.html
+conspiracy-he,conspiracy-he.html,Hebrew,he,handwritten,Hand-authored by the maintainers (no model),fact-checked-false,handwritten,handwritten,no,,data/fixtures/conspiracy-he.html
+gen-gold-he-01-pro,gen-gold-he-01-pro.html,Hebrew,he,gpt-5.4-pro,OpenAI GPT-5.4-pro (responses batch),gold-credible,pro,pass,yes,,data/fixtures/gen-gold-he-01-pro.html
+gen-gold-he-02,gen-gold-he-02.html,Hebrew,he,gpt-5.4,OpenAI GPT-5.4 (chat-completions batch),gold-credible,chat,pass,yes,,data/fixtures/gen-gold-he-02.html
+gen-gold-he-02-pro,gen-gold-he-02-pro.html,Hebrew,he,gpt-5.4-pro,OpenAI GPT-5.4-pro (responses batch),gold-credible,pro,pass,yes,,data/fixtures/gen-gold-he-02-pro.html
+gold-he,gold-he.html,Hebrew,he,handwritten,Hand-authored by the maintainers (no model),gold-credible,handwritten,handwritten,no,,data/fixtures/gold-he.html
+gen-unreliable-he-01-pro,gen-unreliable-he-01-pro.html,Hebrew,he,gpt-5.4,OpenAI GPT-5.4 (chat-completions batch),low-credibility,pro,superseded,no,,data/fixtures/gen-unreliable-he-01-pro.html
+gen-unreliable-he-01-pro-r,gen-unreliable-he-01-pro-r.html,Hebrew,he,gpt-5.4,OpenAI GPT-5.4 (chat-completions batch),low-credibility,pro,rewritten,yes,gen-unreliable-he-01-pro,data/fixtures/gen-unreliable-he-01-pro-r.html
+gen-unreliable-he-02,gen-unreliable-he-02.html,Hebrew,he,gpt-5.4,OpenAI GPT-5.4 (chat-completions batch),low-credibility,chat,pass,yes,,data/fixtures/gen-unreliable-he-02.html
+gen-unreliable-he-02-pro,gen-unreliable-he-02-pro.html,Hebrew,he,gpt-5.4,OpenAI GPT-5.4 (chat-completions batch),low-credibility,pro,pass,yes,,data/fixtures/gen-unreliable-he-02-pro.html
+gen-unreliable-he-03,gen-unreliable-he-03.html,Hebrew,he,gpt-5.4,OpenAI GPT-5.4 (chat-completions batch),low-credibility,chat,superseded,no,,data/fixtures/gen-unreliable-he-03.html
+gen-unreliable-he-03-pro,gen-unreliable-he-03-pro.html,Hebrew,he,gpt-5.4-pro,OpenAI GPT-5.4-pro (responses batch),low-credibility,pro,superseded,no,,data/fixtures/gen-unreliable-he-03-pro.html
+gen-unreliable-he-03-pro-r,gen-unreliable-he-03-pro-r.html,Hebrew,he,gpt-5.4-pro,OpenAI GPT-5.4-pro (responses batch),low-credibility,pro,rewritten,yes,gen-unreliable-he-03-pro,data/fixtures/gen-unreliable-he-03-pro-r.html
+gen-unreliable-he-03-r,gen-unreliable-he-03-r.html,Hebrew,he,gpt-5.4,OpenAI GPT-5.4 (chat-completions batch),low-credibility,chat,rewritten,yes,gen-unreliable-he-03,data/fixtures/gen-unreliable-he-03-r.html
+gen-n12like-he-01,gen-n12like-he-01.html,Hebrew,he,gpt-5.4,OpenAI GPT-5.4 (chat-completions batch),mainstream-israeli-news,chat,pass,yes,,data/fixtures/gen-n12like-he-01.html
+gen-n12like-he-01-pro,gen-n12like-he-01-pro.html,Hebrew,he,gpt-5.4-pro,OpenAI GPT-5.4-pro (responses batch),mainstream-israeli-news,pro,pass,yes,,data/fixtures/gen-n12like-he-01-pro.html
+gen-n12like-he-02,gen-n12like-he-02.html,Hebrew,he,gpt-5.4,OpenAI GPT-5.4 (chat-completions batch),mainstream-israeli-news,chat,pass,yes,,data/fixtures/gen-n12like-he-02.html
+gen-n12like-he-02-pro,gen-n12like-he-02-pro.html,Hebrew,he,gpt-5.4-pro,OpenAI GPT-5.4-pro (responses batch),mainstream-israeli-news,pro,pass,yes,,data/fixtures/gen-n12like-he-02-pro.html
+gen-satire-he-01,gen-satire-he-01.html,Hebrew,he,gpt-5.4,OpenAI GPT-5.4 (chat-completions batch),satire,chat,superseded,no,,data/fixtures/gen-satire-he-01.html
+gen-satire-he-01-pro,gen-satire-he-01-pro.html,Hebrew,he,gpt-5.4-pro,OpenAI GPT-5.4-pro (responses batch),satire,pro,superseded,no,,data/fixtures/gen-satire-he-01-pro.html
+gen-satire-he-01-pro-r,gen-satire-he-01-pro-r.html,Hebrew,he,gpt-5.4-pro,OpenAI GPT-5.4-pro (responses batch),satire,pro,rewritten,yes,gen-satire-he-01-pro,data/fixtures/gen-satire-he-01-pro-r.html
+gen-satire-he-01-r,gen-satire-he-01-r.html,Hebrew,he,gpt-5.4,OpenAI GPT-5.4 (chat-completions batch),satire,chat,rewritten,yes,gen-satire-he-01,data/fixtures/gen-satire-he-01-r.html
+gen-satire-he-02-pro,gen-satire-he-02-pro.html,Hebrew,he,gpt-5.4-pro,OpenAI GPT-5.4-pro (responses batch),satire,pro,superseded,no,,data/fixtures/gen-satire-he-02-pro.html
+gen-satire-he-02-pro-r,gen-satire-he-02-pro-r.html,Hebrew,he,gpt-5.4-pro,OpenAI GPT-5.4-pro (responses batch),satire,pro,rewritten,yes,gen-satire-he-02-pro,data/fixtures/gen-satire-he-02-pro-r.html
+satire-he,satire-he.html,Hebrew,he,handwritten,Hand-authored by the maintainers (no model),satire,handwritten,handwritten,no,,data/fixtures/satire-he.html
+clickbait-he,clickbait-he.html,Hebrew,he,handwritten,Hand-authored by the maintainers (no model),tabloid-clickbait,handwritten,handwritten,no,,data/fixtures/clickbait-he.html
+gen-tabloid-he-01-pro,gen-tabloid-he-01-pro.html,Hebrew,he,gpt-5.4,OpenAI GPT-5.4 (chat-completions batch),tabloid-clickbait,pro,pass,yes,,data/fixtures/gen-tabloid-he-01-pro.html
+gen-tabloid-he-02,gen-tabloid-he-02.html,Hebrew,he,gpt-5.4,OpenAI GPT-5.4 (chat-completions batch),tabloid-clickbait,chat,pass,yes,,data/fixtures/gen-tabloid-he-02.html
+gen-tabloid-he-02-pro,gen-tabloid-he-02-pro.html,Hebrew,he,gpt-5.4-pro,OpenAI GPT-5.4-pro (responses batch),tabloid-clickbait,pro,pass,yes,,data/fixtures/gen-tabloid-he-02-pro.html

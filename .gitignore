@@ -1,0 +1,9 @@
+# Locally-fetched real-outlet snapshots (copyrighted — never commit)
+data/fixtures/real/
+data/real-outlets/*.html
+
+# macOS / editor cruft
+.DS_Store
+*.swp
+.idea/
+.vscode/

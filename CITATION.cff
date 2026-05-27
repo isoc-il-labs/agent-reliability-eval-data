@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+title: "agent-reliability-eval-data: QA'd test units for news-credibility agent evaluation"
+message: "If you use this dataset, please cite it."
+type: dataset
+authors:
+  - name: "ISOC-IL Labs"
+repository-code: "https://github.com/isoc-il-labs/agent-reliability-eval-data"
+abstract: >-
+  The dataset behind agent-reliability-eval: 44 QA'd synthetic news-article test
+  units (and a 68-track raw transparency set) with committed ground-truth labels
+  across six credibility dimensions, in English and Hebrew. Includes the frozen
+  HTML fixtures, the 26 generation seeds, a per-asset language/model provenance
+  manifest, and the label rubric. Real-outlet articles are referenced by URL only
+  (HTML not redistributed). The evaluation harness lives in the separate
+  agent-reliability-eval project.
+keywords:
+  - benchmark
+  - dataset
+  - agent-evaluation
+  - news-credibility
+  - misinformation
+  - llm-eval
+  - hebrew
+license: CC-BY-4.0
